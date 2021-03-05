@@ -10,7 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 import os
-import django_heroku
+
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_filters',
+    'storages'
 ]
 
 MIDDLEWARE = [
@@ -142,8 +144,7 @@ if os.getcwd() == '/app':
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
     #Allow all host headers
-    ALLOWED_HOSTS = ['agrome1.heroku.com']
+    ALLOWED_HOSTS = ['agrome1.herokuapp.com']
     DEBUG = False
 
     #Static asset configuration
-    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
