@@ -1,0 +1,907 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+<title>Agro-me| Grow your agriculture with us| Home</title>
+
+<link rel="icon" href="{% static 'img/core-img/favicon.ico' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/style_main.css' %}">
+
+
+</head>
+<body>
+
+<div class="preloader d-flex align-items-center justify-content-center">
+<div class="spinner"></div>
+</div>
+
+<header class="header-area">
+
+<div class="top-header-area">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="top-header-content d-flex align-items-center justify-content-between">
+
+<div class="top-header-meta">
+<p>Welcome to <span>AGRO-ME</span>, we hope you will enjoy our service and have good experience</p>
+</div>
+
+<div class="top-header-meta text-right">
+<a href="{% static '#' %}" data-toggle="tooltip" data-placement="bottom" title="infodeercreative@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> 
+<span>Email: <span class="__cf_email__" data-cfemail="0960676f666d6c6c7b6a7b6c687d607f6c496e64686065276a6664">agrome@gmail.com</span></span></a>
+<a href="{% static '#' %}" data-toggle="tooltip" data-placement="bottom" title="+91 9876543210"><i class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: +91 9876543210</span></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="famie-main-menu">
+<div class="classy-nav-container breakpoint-off">
+<div class="container">
+
+<nav class="classy-navbar justify-content-between" id="famieNav">
+
+<a href="index" class="nav-brand"><img src="{% static 'img/core-img/logo.png' %}" alt=""></a>
+
+<div class="classy-navbar-toggler">
+<span class="navbarToggler"><span></span><span></span><span></span></span>
+</div>
+
+<div class="classy-menu">
+
+<div class="classycloseIcon">
+
+<div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+</div>
+
+<div class="classynav" style="margin-right:-100px;">
+<ul>
+<li class="active"><a href="index">Home</a></li>
+
+<li><a href="dealer">Dealers</a></li>
+
+<li><a href="shop">Shop</a></li>
+
+<li><a href="news">News</a></li>
+
+</ul>
+{% if user.is_authenticated %}
+<div style="margin-left:20px;">
+  <a href="profile"><img src="{% static 'img/core-img/profile.png' %}" style="height:50px; width:50px; margin-top:15px;"></a>
+  <h6 style="margin-left:5px;">{{user.username}}</h6>
+  </div>
+
+  <div style="margin-left:55px; margin-right:-50px;" >
+    <a href="logout" class="btn famie-btn mt-4" style="color:#fff; border-radius:15px;">Log Out</a>
+    </div>
+{% else %}
+<div style="margin-left:55px; margin-right:-50px; margin-bottom:15px;">
+<a href="login" class="btn famie-btn mt-4" style="color:#fff; border-radius:15px;">Log In / Sign Up</a>
+</div>
+{% endif %}
+
+</div>
+
+</div>
+
+
+
+</nav>
+
+<div class="search-form">
+<form action="#" method="get">
+<input type="search" name="search" id="search" placeholder="Type keywords &amp; press enter...">
+<button type="submit" class="d-none"></button>
+</form>
+
+<div class="closeIcon"><i class="fa fa-times" aria-hidden="true"></i></div>
+</div>
+</div>
+</div>
+</div>
+</header>
+
+
+<div class="hero-area">
+<div class="welcome-slides owl-carousel">
+
+<div class="single-welcome-slides bg-img bg-overlay jarallax" style="background-image: url('{% static 'img/bg-img/1.jpg' %}');">
+<div class="container h-100">
+<div class="row h-100 align-items-center">
+<div class="col-12 col-lg-10">
+<div class="welcome-content">
+<h2 data-animation="fadeInUp" data-delay="200ms">The hearth of the farm is the true center of our universe.</h2>
+<p data-animation="fadeInUp" data-delay="400ms">“Those too lazy to plow in the right season will have no food at the harvest.” </p>
+<a href="{% static '#' %}" class="btn famie-btn mt-4" data-animation="bounceInUp" data-delay="600ms">Contact Us</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="single-welcome-slides bg-img bg-overlay jarallax" style="background-image: url('{% static 'img/bg-img/7.jpg' %}');">
+<div class="container h-100">
+<div class="row h-100 align-items-center">
+<div class="col-12 col-lg-10">
+<div class="welcome-content">
+<h2 data-animation="fadeInDown" data-delay="200ms">The hearth of the farm is the true center of our universe.</h2>
+<p data-animation="fadeInDown" data-delay="400ms">“Agriculture is our wisest pursuit, because it will in the end contribute most to real wealth, good morals, and happiness.” </p>
+<a href="{% static '#' %}" class="btn famie-btn mt-4" data-animation="bounceInDown" data-delay="600ms">Contact Us</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<section class="famie-benefits-area section-padding-100-0 pb-5">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="benefits-thumbnail mb-50">
+<img src="{% static 'img/bg-img/2.jpg' %}" alt="">
+</div>
+</div>
+</div>
+<div class="section-heading">
+
+<center><h2><span>How</span> it works</h2></center>
+<center><img src="{% static 'img/core-img/decor.png' %}" alt=""></center>
+</div>
+<div class="row justify-content-center">
+
+<div class="col-12 col-sm-4 col-lg">
+<div class="single-benefits-area wow fadeInUp mb-50" data-wow-delay="100ms">
+<img src="{% static 'img/core-img/profile.png' %}" alt="" style="height:50%; width:50%;">
+<h5>Create Profile</h5>
+</div>
+</div>
+
+<div class="col-12 col-sm-4 col-lg">
+<div class="single-benefits-area wow fadeInUp mb-50" data-wow-delay="300ms">
+<img src="{% static 'img/core-img/search.png' %}" alt="" style="height:50%; width:50%;">
+<h5>Search for Your Dealer</h5>
+</div>
+</div>
+
+<div class="col-12 col-sm-4 col-lg">
+<div class="single-benefits-area wow fadeInUp mb-50" data-wow-delay="500ms">
+<img src="{% static 'img/core-img/chat.png' %}" alt="" style="height:50%; width:50%;">
+<h5>Have a chat</h5>
+</div>
+</div>
+
+<div class="col-12 col-sm-4 col-lg">
+<div class="single-benefits-area wow fadeInUp mb-50" data-wow-delay="700ms">
+<img src="{% static 'img/core-img/deal.png' %}" alt="" style="height:50%; width:50%;">
+<h5>Get Your deal done</h5>
+</div>
+</div>
+
+
+</div>
+</div>
+</section>
+
+
+<section class="about-us-area">
+<div class="container">
+<div class="row align-items-center">
+
+<div class="col-12 col-md-8">
+<div class="about-us-content mb-100">
+
+<div class="section-heading">
+<p>About us</p>
+<h2><span>Let Us</span> Tell You Our Story</h2>
+<img src="{% static 'img/core-img/decor.png' %}" alt="">
+</div>
+<p>Looking for a place to buy or sell farming products to someone ,but do not know where to begin from? Do not know who to sell it to? 
+Or who to buy it from?<br>Well NO MORE WORRIES! We are more than glad to be a helping hand to you.We just for you,have brought AGRO-ME
+at your service.Through this social cum e-commerce site we aim to bring the buyers and sellers together on one platform thus making the
+process of agricultural marketing more easier and handy.
+</p>
+<!----<a href="{% static '#" class="btn famie-btn mt-30">Read More</a>--->
+</div>
+</div>
+
+<div class="col-12 col-md-4">
+<!----<div class="famie-video-play mb-100">
+
+
+<a href="{% static 'https://www.youtube.com/watch?v=7HKoqNJtMTQ" class="play-icon"><i class="fa fa-play"></i></a>
+</div>--->
+<img src="{% static 'img/bg-img/6.jpg' %}" alt="" style="padding-bottom:25px;border-radius:50%">
+</div>
+</div>
+</div>
+</section>
+
+
+<section class="services-area d-flex flex-wrap">
+
+<div class="services-thumbnail bg-img jarallax" style="background-image: url('{% static 'img/bg-img/7.jpg' %}');"></div>
+
+<div class="services-content section-padding-100-50 px-5">
+<div class="container-fluid">
+<div class="row">
+<div class="col-12">
+
+<div class="section-heading">
+<p>What we do</p>
+<h2><span>FEATURES</span></h2>
+<img src="{% static 'img/core-img/decor.png' %}" alt="">
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-12 mb-50">
+<p> This website allows the user to make his own profile specifying the item he wishes to sell/buy mentioning the price he is expecting
+to sell or buy it at and much information.<br>Must be thinking it is another buy-sell classified website,well sorry,you've gotten a wrong
+idea!<br>Still confused,let's see some of it's features.</p>
+</div>
+
+<div class="col-12 col-lg-6">
+<div class="single-service-area mb-50 wow fadeInUp" data-wow-delay="100ms">
+
+<div class="service-title mb-3 d-flex align-items-center">
+
+<h5>Can have a track on profile visitors,products sold and bought and profiles you starred.</h5>
+</div>
+ 
+</div>
+</div>
+
+<div class="col-12 col-lg-6">
+<div class="single-service-area mb-50 wow fadeInUp" data-wow-delay="300ms">
+
+<div class="service-title mb-3 d-flex align-items-center">
+
+<h5>Get updates on new schemes and news related to farming</h5>
+</div>
+ 
+</div>
+</div>
+
+<div class="col-12 col-lg-6">
+<div class="single-service-area mb-50 wow fadeInUp" data-wow-delay="500ms">
+
+<div class="service-title mb-3 d-flex align-items-center">
+
+<h5>Get to have your own profile and a list of various dealers.</h5>
+</div>
+
+</div>
+</div>
+
+
+<div class="col-12 col-lg-6">
+<div class="single-service-area mb-50 wow fadeInUp" data-wow-delay="700ms">
+
+<div class="service-title mb-3 d-flex align-items-center">
+
+<h5>Get various other farming products in the shop section.</h5>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<section class="our-products-area section-padding-100">
+<div class="container">
+<div class="row">
+<div class="col-12">
+
+<div class="section-heading text-center">
+<p>Featured Products</p>
+<h2><span>Best Quality</h2>
+<h2><span>Tools and Products</span> for your FARM</h2>
+<img src="{% static 'img/core-img/decor2.png' %}" alt="">
+</div>
+</div>
+</div>
+<div class="row">
+
+<div class="col-12 col-sm-6 col-lg-3">
+<div class="single-product-area mb-50 wow fadeInUp" data-wow-delay="100ms">
+
+<div class="product-thumbnail">
+<img src="{% static 'img/bg-img/f1.jpg' %}" alt="">
+
+<span class="product-tags">Hot</span>
+
+<div class="product-meta-data">
+<a href="{% static '#' %}" data-toggle="tooltip" data-placement="top" title="Favourite"><i class="icon_heart_alt"></i></a>
+<a href="{% static '#' %}" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="icon_cart_alt"></i></a>
+<a href="{% static '#' %}" data-toggle="tooltip" data-placement="top" title="Compare"><i class="arrow_left-right_alt"></i></a>
+</div>
+</div>
+
+<div class="product-desc text-center pt-4">
+<a href="{% static '#' %}" class="product-title">Fungicide</a>
+<h6 class="price">Rs.500</h6>
+</div>
+</div>
+</div>
+
+<div class="col-12 col-sm-6 col-lg-3">
+<div class="single-product-area mb-50 wow fadeInUp" data-wow-delay="300ms">
+
+<div class="product-thumbnail">
+<img src="{% static 'img/bg-img/f2.jpg' %}" alt="">
+
+<div class="product-meta-data">
+<a href="{% static '#' %}" data-toggle="tooltip" data-placement="top" title="Favourite"><i class="icon_heart_alt"></i></a>
+<a href="{% static '#' %}" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="icon_cart_alt"></i></a>
+<a href="{% static '#' %}" data-toggle="tooltip" data-placement="top" title="Compare"><i class="arrow_left-right_alt"></i></a>
+</div>
+</div>
+
+<div class="product-desc text-center pt-4">
+<a href="{% static '#' %}" class="product-title">Hand Sickle</a>
+<h6 class="price">Rs.350</h6>
+</div>
+</div>
+</div>
+
+<div class="col-12 col-sm-6 col-lg-3">
+<div class="single-product-area mb-50 wow fadeInUp" data-wow-delay="500ms">
+
+<div class="product-thumbnail">
+<img src="{% static 'img/bg-img/f3.jpg' %}" alt="">
+
+<div class="product-meta-data">
+<a href="{% static '#' %}" data-toggle="tooltip" data-placement="top" title="Favourite"><i class="icon_heart_alt"></i></a>
+<a href="{% static '#' %}" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="icon_cart_alt"></i></a>
+<a href="{% static '#' %}" data-toggle="tooltip" data-placement="top" title="Compare"><i class="arrow_left-right_alt"></i></a>
+</div>
+</div>
+
+<div class="product-desc text-center pt-4">
+<a href="{% static '#' %}" class="product-title">Shovel and Spade</a>
+<h6 class="price">Rs.750</h6>
+</div>
+</div>
+</div>
+
+<div class="col-12 col-sm-6 col-lg-3">
+<div class="single-product-area mb-50 wow fadeInUp" data-wow-delay="700ms">
+
+<div class="product-thumbnail">
+<img src="{% static 'img/bg-img/f4.jfif' %}" alt="">
+
+<span class="product-tags bg-danger">Sale</span>
+
+<div class="product-meta-data">
+<a href="{% static '#' %}" data-toggle="tooltip" data-placement="top" title="Favourite"><i class="icon_heart_alt"></i></a>
+<a href="{% static '#' %}" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="icon_cart_alt"></i></a>
+<a href="{% static '#' %}" data-toggle="tooltip" data-placement="top" title="Compare"><i class="arrow_left-right_alt"></i></a>
+</div>
+</div>
+
+<div class="product-desc text-center pt-4">
+<a href="{% static '#' %}" class="product-title">Cultivator</a>
+<h6 class="price">Rs.5000</h6>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-12">
+<div class="gotoshop-btn text-center wow fadeInUp" data-wow-delay="900ms">
+<a href="{% static 'shop.html' %}" class="btn famie-btn">Go to Store</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<section class="newsletter-area section-padding-100 bg-img bg-overlay jarallax" style="background-image: url('{% static 'img/bg-img/8.jpg' %}');">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-12 col-lg-10">
+<div class="newsletter-content">
+
+<div class="section-heading white text-center">
+<p>What we do</p>
+ <h2><span>A New Agri</span> Perspective</h2>
+<img src="{% static 'img/core-img/decor2.png' %}" alt="">
+</div>
+<p class="text-white mb-50 text-center">Subscribe to get more updates on upcoming features and notifications on this website.</p>
+</div>
+</div>
+</div>
+
+<div class="row justify-content-center">
+<div class="col-12 col-lg-6">
+<form action="#" method="post">
+<input type="text" class="form-control" placeholder="Enter your email">
+<button type="submit" class="btn famie-btn">Subscribe</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+
+
+<section class="farming-practice-area section-padding-100-50">
+<div class="container">
+<div class="row">
+<div class="col-12">
+
+<div class="section-heading text-center">
+<p>Make the green world</p>
+<h2><span>Farming Practices</span> To Preserve Land & Water</h2>
+<img src="{% static 'img/core-img/decor2.png' %}" alt="">
+</div>
+</div>
+</div>
+<div class="row">
+
+<div class="col-12 col-sm-6 col-lg-4">
+<div class="single-farming-practice-area mb-50 wow fadeInUp" data-wow-delay="100ms">
+
+<div class="farming-practice-thumbnail">
+<img src="{% static 'img/bg-img/9.jpg' %}" alt="">
+</div>
+
+<div class="farming-practice-content text-center">
+
+<div class="farming-icon">
+<img src="{% static 'img/core-img/chicken.png' %}" alt="">
+</div>
+<span>Farming practice for</span>
+<h4>Chicken Farmed For Meat</h4>
+<p>Under modern farming methods, meat chickens reared indoors reach slaughter weight at 5 to 9 weeks of age, as they have been selectively bred to do so. In the ...</p>
+</div>
+</div>
+</div>
+
+<div class="col-12 col-sm-6 col-lg-4">
+<div class="single-farming-practice-area mb-50 wow fadeInUp" data-wow-delay="200ms">
+
+<div class="farming-practice-thumbnail">
+<img src="{% static 'img/bg-img/10.jpg' %}" alt="">
+</div>
+
+<div class="farming-practice-content text-center">
+
+<div class="farming-icon">
+<img src="{% static 'img/core-img/pig.png' %}" alt="">
+</div>
+<span>Farming practice for</span>
+<h4>Pig Farm Management</h4>
+<p>Breeding care·Pigs are highly prolific in nature and two farrowings in a year should be planned by adopting optimal management conditions.For every 10 sows ...</p>
+</div>
+</div>
+</div>
+
+<div class="col-12 col-sm-6 col-lg-4">
+<div class="single-farming-practice-area mb-50 wow fadeInUp" data-wow-delay="300ms">
+
+<div class="farming-practice-thumbnail">
+<img src="{% static 'img/bg-img/11.jpg' %}" alt="">
+</div>
+
+<div class="farming-practice-content text-center">
+
+<div class="farming-icon">
+<img src="{% static 'img/core-img/cow.png' %}" alt="">
+</div>
+<span>Farming practice for</span>
+<h4>Beef Cattle Farming</h4>
+<p>Cattle farming is filled with opportunities, from dairy and beef to selling calves for shows at local fairs. To start a new farm, you need a business plan, 
+a plot of land, and start-up money. Build all of the features your farm needs, then start with a couple of cows...</p>
+</div>
+</div>
+</div>
+
+<div class="col-12 col-sm-6 col-lg-4">
+<div class="single-farming-practice-area mb-50 wow fadeInUp" data-wow-delay="400ms">
+
+<div class="farming-practice-thumbnail">
+<img src="{% static 'img/bg-img/12.jpg' %}" alt="">
+</div>
+
+<div class="farming-practice-content text-center">
+
+<div class="farming-icon">
+<img src="{% static 'img/core-img/cereal.png' %}" alt="">
+</div>
+<span>Farming practice for</span>
+<h4>Improved Rice Cultivation</h4>
+<p>By using these improved crop management methods, farmers can improve the productivity and profitability of rice crops through the adoption of locally adapted ' ...</p>
+</div>
+</div>
+</div>
+
+<div class="col-12 col-sm-6 col-lg-4">
+<div class="single-farming-practice-area mb-50 wow fadeInUp" data-wow-delay="500ms">
+
+<div class="farming-practice-thumbnail">
+<img src="{% static 'img/bg-img/13.jpg' %}" alt="">
+</div>
+
+<div class="farming-practice-content text-center">
+
+<div class="farming-icon">
+<img src="{% static 'img/core-img/sprout.png' %}" alt="">
+</div>
+<span>Farming practice for</span>
+<h4>Soil Improvement Techniques</h4>
+<p>Information for farmers and gardeners who want to understand the physical, chemical, and ... Management Practices to Improve Soil Health. 1. ...</p>
+</div>
+</div>
+</div>
+
+<div class="col-12 col-sm-6 col-lg-4">
+<div class="single-farming-practice-area mb-50 wow fadeInUp" data-wow-delay="600ms">
+
+<div class="farming-practice-thumbnail">
+<img src="{% static 'img/bg-img/14.jpg' %}" alt="">
+</div>
+
+<div class="farming-practice-content text-center">
+
+<div class="farming-icon">
+<img src="{% static 'img/core-img/vegetable.png' %}" alt="">
+</div>
+<span>Farming practice for</span>
+<h4>Intensive Fruit Farming</h4>
+<p>Intensive farming practices include growing high-yield crops, using fertilizers and pesticides and bringing more land under agricultural production were used as the answer to filling 
+the production gap, but there are unwelcome side effects.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<!---<section class="testimonial-area bg-img bg-overlay section-padding-100 jarallax" style="background-image: url('img/bg-img/15.jpg');">
+<div class="container">
+<div class="row">
+<div class="col-12">
+
+<div class="testimonial-slides owl-carousel">
+
+<div class="single-slide">
+
+<div class="testi-text d-flex">
+<div class="quote-icon">
+<img src="{% static 'img/core-img/quote.png" alt="">
+</div>
+<h5>"Thank you for your organic products. My children like your products and they use for breakfast. We are loving the pure milk, freshly fruit and of course our staple, Brown Rice Bread. Your Gluten Free breads truly make me feel
+lighter and uplifted. It's the only bread I plan to eat for the rest of my life. I will use them for many years."</h5>
+</div>
+
+<div class="testimonial-thumbnail-name d-flex align-items-center">
+<div class="testimonial-thumbnail">
+<img src="{% static 'img/bg-img/16.jpg" alt="">
+</div>
+<div class="testimonial-name">
+<h5>Mrs Lara Sullivan</h5>
+<h6>Customer</h6>
+</div>
+</div>
+</div>
+
+<div class="single-slide">
+
+<div class="testi-text d-flex">
+<div class="quote-icon">
+<img src="{% static 'img/core-img/quote.png" alt="">
+</div>
+<h5>"Thank you for your organic products. My children like your products and they use for breakfast. We are loving the pure milk, freshly fruit and of course our staple, Brown Rice Bread. Your Gluten Free breads truly make me feel
+lighter and uplifted. It's the only bread I plan to eat for the rest of my life. I will use them for many years."</h5>
+</div>
+
+<div class="testimonial-thumbnail-name d-flex align-items-center">
+<div class="testimonial-thumbnail">
+<img src="{% static 'img/bg-img/16.jpg" alt="">
+</div>
+<div class="testimonial-name">
+<h5>Ajoy Das</h5>
+<h6>Client</h6>
+</div>
+</div>
+</div>
+
+<div class="single-slide">
+
+<div class="testi-text d-flex">
+<div class="quote-icon">
+<img src="{% static 'img/core-img/quote.png" alt="">
+</div>
+<h5>"Thank you for your organic products. My children like your products and they use for breakfast. We are loving the pure milk, freshly fruit and of course our staple, Brown Rice Bread. Your Gluten Free breads truly make me feel
+lighter and uplifted. It's the only bread I plan to eat for the rest of my life. I will use them for many years."</h5>
+</div>
+
+<div class="testimonial-thumbnail-name d-flex align-items-center">
+<div class="testimonial-thumbnail">
+<img src="{% static 'img/bg-img/16.jpg" alt="">
+</div>
+<div class="testimonial-name">
+<h5>Akash Khan</h5>
+<h6>Customer</h6>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+--->
+<section class="contact-area section-padding-100-0">
+<div class="container">
+<div class="row justify-content-between">
+
+ <div class="col-12 col-lg-5">
+<div class="contact-content mb-100">
+
+<div class="section-heading">
+<p>Contact now</p>
+<h2><span>Get In Touch</span> With Us</h2>
+<img src="{% static 'img/core-img/decor.png' %}" alt="">
+</div>
+
+<div class="contact-form-area">
+<form action="https://preview.colorlib.com/theme/farmie/index.html" method="post">
+<div class="row">
+<div class="col-lg-6">
+<input type="text" class="form-control" name="name" placeholder="Your Name">
+</div>
+<div class="col-lg-6">
+<input type="email" class="form-control" name="email" placeholder="Your Email">
+</div>
+<div class="col-12">
+<input type="text" class="form-control" name="subject" placeholder="Your Subject">
+</div>
+<div class="col-12">
+<textarea name="message" class="form-control" cols="30" rows="10" placeholder="Your Message"></textarea>
+</div>
+<div class="col-12">
+<button type="submit" class="btn famie-btn">Send Message</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+
+<div class="col-lg-6">
+<div class="contact-maps mb-100">
+<iframe src="{% static 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7402946.112200236!2d72.55663501183946!3d25.043582034747544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1614688200075!5m2!1sen!2sin' %}" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!----
+<section class="news-area bg-gray section-padding-100-0">
+<div class="container">
+<div class="row">
+
+<div class="col-12 col-lg-6">
+<div class="featured-post-area mb-100 wow fadeInUp" data-wow-delay="100ms">
+<img src="{% static 'img/bg-img/17.jpg" alt="">
+
+<div class="post-content">
+<h6>Post on <a href="{% static '#">18 Aug 2018</a> / <a href="{% static '#">Carlos Bacca</a></h6>
+<a href="{% static '#" class="post-title">Why innovation is key to maintaining our export market share</a>
+</div>
+</div>
+</div>
+
+<div class="col-12 col-lg-6 mb-100">
+
+<div class="single-blog-area style-2 wow fadeInUp" data-wow-delay="300ms">
+
+<div class="post-content">
+<h6>Post on <a href="{% static '#">18 Aug 2018</a> / <a href="{% static '#">Peter Crough</a></h6>
+<a href="{% static '#" class="post-title">Rising cattle supplies see beef export lifted</a>
+<p>Maecenas facilisis quam orcit, velo porttitor arcu egestas eu. Maecenas donald imperdiet nibh, quis. Etiam non scelerisque exited sagittis...</p>
+</div>
+</div>
+
+<div class="single-blog-area style-2 wow fadeInUp" data-wow-delay="500ms">
+
+<div class="post-content">
+<h6>Post on <a href="{% static '#">18 Aug 2018</a> / <a href="{% static '#">Peter Crough</a></h6>
+<a href="{% static '#" class="post-title">Cattle marts: Cows take a hit at the ringside</a>
+<p>Maecenas facilisis quam orcit, velo porttitor arcu egestas eu. Maecenas donald imperdiet nibh, quis. Etiam non scelerisque exited sagittis...</p>
+</div>
+</div>
+
+<div class="single-blog-area style-2 wow fadeInUp" data-wow-delay="700ms">
+
+<div class="post-content">
+<h6>Post on <a href="{% static '#">18 Aug 2018</a> / <a href="{% static '#">Peter Crough</a></h6>
+<a href="{% static '#" class="post-title">Malting barley price set to commence</a>
+<p>Maecenas facilisis quam orcit, velo porttitor arcu egestas eu. Maecenas donald imperdiet nibh, quis. Etiam non scelerisque exited sagittis...</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+---->
+
+<footer class="footer-area">
+
+<div class="main-footer bg-img bg-overlay section-padding-80-0" style="background-image: url('{% static 'img/bg-img/3.jpg' %}');">
+<div class="container">
+<div class="row">
+
+<div class="col-12 col-sm-6 col-lg-3">
+<div class="footer-widget mb-80">
+
+<p>A platform where buyers and sellers collaborate.</p>
+<div class="contact-info">
+ <p><i class="fa fa-map-pin" aria-hidden="true"></i><span>257 Model Town, Delhi</span></p>
+<p><i class="fa fa-envelope" aria-hidden="true"></i><span>agrome@gmail.com</span></p>
+<p><i class="fa fa-phone" aria-hidden="true"></i><span>+91 9876543210</span></p>
+</div>
+</div>
+</div>
+<!---
+<div class="col-12 col-sm-6 col-lg-3">
+<div class="footer-widget mb-80">
+
+<h5 class="widget-title">QUICK LINK</h5>
+
+<nav class="footer-widget-nav">
+<ul>
+<li><a href="{% static '#">Purchase</a></li>
+<li><a href="{% static '#">Policities</a></li>
+<li><a href="{% static '#">Shipping</a></li>
+<li><a href="{% static '#">FAQs</a></li>
+<li><a href="{% static '#">Return</a></li>
+<li><a href="{% static '#">Careers</a></li>
+<li><a href="{% static '#">Payments</a></li>
+<li><a href="{% static '#">Partners</a></li>
+<li><a href="{% static '#">Guide</a></li>
+<li><a href="{% static '#">Standard</a></li>
+<li><a href="{% static '#">News</a></li>
+<li><a href="{% static '#">Brands</a></li>
+</ul>
+</nav>
+</div>
+</div>
+--->
+<!----
+<div class="col-12 col-sm-6 col-lg-3">
+<div class="footer-widget mb-80">
+<h5 class="widget-title">RECENT NEWS</h5>
+
+<div class="single-recent-blog d-flex align-items-center">
+<div class="post-thumbnail">
+<img src="{% static 'img/bg-img/4.jpg" alt="">
+</div>
+<div class="post-content">
+<a href="{% static '#" class="post-title">WA’s largest farming business on the market</a>
+<div class="post-date">18 Aug 2018</div>
+</div>
+</div>
+
+<div class="single-recent-blog d-flex align-items-center">
+<div class="post-thumbnail">
+<img src="{% static 'img/bg-img/5.jpg" alt="">
+</div>
+<div class="post-content">
+<a href="{% static '#" class="post-title">Beef retail prices hit a record</a>
+<div class="post-date">18 Aug 2018</div>
+</div>
+</div>
+</div>
+</div>
+-->
+<div class="col-12 col-sm-6 col-lg-3">
+<div class="footer-widget mb-80">
+<h5 class="widget-title">STAY CONNECTED</h5>
+
+<div class="footer-social-info">
+<a href="{% static '#' %}">
+<i class="fa fa-facebook" aria-hidden="true"></i>
+<span>Facebook</span>
+</a>
+<a href="{% static '#' %}">
+<i class="fa fa-twitter" aria-hidden="true"></i>
+<span>Twitter</span>
+</a>
+<a href="{% static '#' %}">
+<i class="fa fa-pinterest" aria-hidden="true"></i>
+<span>Pinterest</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="copywrite-area">
+<div class="container">
+<div class="copywrite-text">
+<div class="row align-items-center">
+<div class="col-md-6">
+<p>
+
+
+</p>
+</div>
+<div class="col-md-6">
+<div class="footer-nav">
+<nav>
+<ul>
+
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+
+
+
+<script src="{% static 'js/jquery.min.js' %}"></script>
+
+<script src="{% static 'js/popper.min.js' %}"></script>
+
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+
+<script src="{% static 'js/classynav.js' %}"></script>
+
+<script src="{% static 'js/wow.min.js' %}"></script>
+
+<script src="{% static 'js/jquery.sticky.js' %}"></script>
+
+<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+
+<script src="{% static 'js/jquery.scrollup.min.js' %}"></script>
+
+<script src="{% static 'js/jarallax.min.js' %}"></script>
+
+<script src="{% static 'js/jarallax-video.min.js' %}"></script>
+
+<script src="{% static 'js/active.js' %}"></script>
+
+<script async src="{% static 'https://www.googletagmanager.com/gtag/js?id=UA-23581568-13' %}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+</body>
+
+</html>
