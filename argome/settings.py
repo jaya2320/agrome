@@ -26,7 +26,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 SECRET_KEY = '=pf4kk3fq=jl#uemw-h3*djw7hz52d5l82ud2+ge^c4d7q-36c'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = TRUE
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
@@ -142,7 +142,7 @@ if os.getcwd() == '/app':
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
     #Allow all host headers
-    ALLOWED_HOSTS = ['agrome1.herokuapp.com']
+    ALLOWED_HOSTS = ['agrome1.heroku.com']
     DEBUG = False
 
     #Static asset configuration
