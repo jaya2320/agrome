@@ -34,7 +34,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'farm.apps.FarmConfig',
+    'farm',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -133,8 +133,7 @@ STATIC_ROOT=os.path.join(BASE_DIR,'assets')
 
 
 
-#Activate django_heroku
-django_heroku.settings(locals())
+
 
 if os.getcwd() == '/app':
     import dj_database_url
