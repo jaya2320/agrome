@@ -144,6 +144,6 @@ if os.getcwd() == '/app':
 
     #Allow all host headers
     ALLOWED_HOSTS = ['agrome1.herokuapp.com']
-    DEBUG = False
+    DEBUG = True
 
     #Static asset configuration
