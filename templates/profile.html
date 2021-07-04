@@ -1626,8 +1626,37 @@ footer p a:hover{
 
 
 }
+.description_area1{
+  width:750px;
+  height:300px;
+  
+}
+.description_area11{
+  border-radius:15px;
+  border:2px solid #000;
+  padding:20px;
+}
+.description_area11{
+  float:left;
+  
+}
 
+.description_area2{
+  width:650px;
+}
+.description_area22{
+  border-radius:15px;
+  border:2px solid #000;
+  padding:20px;
+}
+.description_area22{
+  float:left;
+  margin-left:500px;
+  margin-top:-305px;
+  margin-right:-500px;
+ 
 
+}
 
 </style>
 
@@ -1737,11 +1766,7 @@ footer p a:hover{
               <div class="name" >
                 <h3 class="title">John Saxena</h3>
                 <h6>seller<br></h6>
-                <!---
-                <a href="{% static '#pablo" class="btn btn-just-icon btn-link btn-dribbble"><i class="fa fa-dribbble"></i></a>
-                <a href="{% static '#pablo" class="btn btn-just-icon btn-link btn-twitter"><i class="fa fa-twitter"></i></a>
-                <a href="{% static '#pablo" class="btn btn-just-icon btn-link btn-pinterest"><i class="fa fa-pinterest"></i></a>
-                -->
+                
               </div>
             </div>
             <div class="follow">
@@ -1750,45 +1775,41 @@ footer p a:hover{
           </div>
           </div>
         </div>
-        <div class="description text-center">
-          <p>
-<h ><b><center>Item Available:</center></b></h>
-ITEM - Bajra    &emsp;&nbsp;&nbsp;&nbsp;      Price - Rs.2150 per Quintal<br>
-ITEM - Maize    &emsp;&nbsp;&nbsp;&nbsp;       Price - Rs.1850 per Quintal<br>
-ITEM - Ragi     &emsp;&nbsp;&nbsp;&nbsp;       Price - Rs.3295 per Quintal<br>
-<h><b><center>Location:</center></b></h>
-Rajkot<br>
-<h><b><center>Negotiation:</center></b></h>
-Available<br>
-<h><center><b>Stock:</b>Available</center></h>
-<h><b><center>Short description:</center></b></h>
-We have the best quality products you can get at the most minimal price.Moreover you can specify us the quantity you wantand we'll have it delivered to you.<br></p>
-        </div>
-        <!---
-        <div class="row">
-          <div class="col-md-6 ml-auto mr-auto">
-            <div class="profile-tabs">
-              <ul class="nav nav-pills nav-pills-icons justify-content-center" role="tablist">
-                <li class="nav-item">
-                  <a class="nav-link active" href="{% static '#work" role="tab" data-toggle="tab">
-                    <i class="material-icons">palette</i> Work
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="{% static '#studio" role="tab" data-toggle="tab">
-                    <i class="material-icons">camera</i> Studio
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="{% static '#favorite" role="tab" data-toggle="tab">
-                    <i class="material-icons">favorite</i> Favorite
-                  </a>
-                </li>
-              </ul>
-            </div>
+        <div class="description_area1">
+          <div class="description_area11">
+            <h3>About</h3>
+            <p><strong>Location: </strong> Rajkot</p>
+            <p><strong>Negotiation:</strong> Available</p>
+            <p><strong>Stock : </strong>Available</p>
+            <p><strong>Short Description:</strong> We have the best quality products <br>
+              you can get at the most minimal price.Moreover you can <br>specify us the quantity you wantand we'll have it delivered to you.</p>
           </div>
         </div>
-        -->
+        <div class="description_area2">
+          <div class="description_area22">
+            <h3><strong>List of Items available :</strong> </h3>
+            <TABLE>
+              <thead>
+                <tr>
+                  <th>Item Available</th>
+                  <th>Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Bajra</td>
+                  <td>500 per kg</td>
+                </tr>
+                <tr>
+                  <td>Maize</td>
+                  <td>500 per kg</td>
+                </tr>
+              </tbody>
+            </TABLE>
+
+          </div>
+        </div>
+        
         <div class="tab-content tab-space">
           <div class="tab-pane work active show" id="work">
             <div class="row">
@@ -1800,10 +1821,7 @@ We have the best quality products you can get at the most minimal price.Moreover
                       <a href="{% static '#pablo' %}"></a>
                       
                       <div class="card-body">
-                        <!---<label class="badge badge-warning">Spring 2016</label>
-                        <a href="{% static '#pablo">
-                          <h2 class="card-title">Stilleto</h2>
-                        </a>--->
+                        
                       </div>
            
                     </div>
@@ -1812,10 +1830,7 @@ We have the best quality products you can get at the most minimal price.Moreover
                     <div class="card card-background" style="background-image: url('{% static 'img/bg-img/i2.jfif' %}')">
                       <a href="{% static '#pablo' %}"></a>
                       <div class="card-body">
-                        <!---<label class="badge badge-info">Spring 2016</label>
-                        <a href="{% static '#pablo">
-                          <h2 class="card-title">High Heels</h2>
-                        </a>--->
+                        
                       </div>
                     </div>
                   </div>
@@ -1823,10 +1838,7 @@ We have the best quality products you can get at the most minimal price.Moreover
                     <div class="card card-background" style="background-image: url('{% static 'img/bg-img/i3.jfif' %}')">
                       <a href="{% static '#pablo' %}"></a>
                       <div class="card-body">
-                       <!--- <label class="badge badge-danger">Summer 2016</label>
-                        <a href="{% static '#pablo">
-                          <h2 class="card-title">Flats</h2>
-                        </a>-->
+                       
                       </div>
                     </div>
                   </div>
@@ -1834,10 +1846,7 @@ We have the best quality products you can get at the most minimal price.Moreover
                     <div class="card card-background" style="background-image: url('{% static 'img/bg-img/i4.jfif' %}')">
                       <a href="{% static '#pablo' %}"></a>
                       <div class="card-body">
-                        <!---<label class="badge badge-success">Winter 2015</label>
-                        <a href="{% static '#pablo">
-                          <h2 class="card-title">Men's Sneakers</h2>
-                        </a>-->
+                       
                       </div>
                     </div>
                   </div>
@@ -1851,11 +1860,7 @@ We have the best quality products you can get at the most minimal price.Moreover
                 <h4 class="title">Contact Info: </h4>
                 <p>+91 9999442212</p>
                 <hr>
-<!---
-                <h4 class="title">Focus</h4>
-                <span class="badge badge-primary">Footwear</span>
-                <span class="badge badge-rose">Luxury</span>
--->
+
               </div>
 
             </div>
@@ -1994,58 +1999,7 @@ We have the best quality products you can get at the most minimal price.Moreover
 </div>
 </div>
 </div>
-<!---
-<div class="col-12 col-sm-6 col-lg-3">
-<div class="footer-widget mb-80">
 
-<h5 class="widget-title">QUICK LINK</h5>
-
-<nav class="footer-widget-nav">
-<ul>
-<li><a href="{% static '#">Purchase</a></li>
-<li><a href="{% static '#">Policities</a></li>
-<li><a href="{% static '#">Shipping</a></li>
-<li><a href="{% static '#">FAQs</a></li>
-<li><a href="{% static '#">Return</a></li>
-<li><a href="{% static '#">Careers</a></li>
-<li><a href="{% static '#">Payments</a></li>
-<li><a href="{% static '#">Partners</a></li>
-<li><a href="{% static '#">Guide</a></li>
-<li><a href="{% static '#">Standard</a></li>
-<li><a href="{% static '#">News</a></li>
-<li><a href="{% static '#">Brands</a></li>
-</ul>
-</nav>
-</div>
-</div>
---->
-<!----
-<div class="col-12 col-sm-6 col-lg-3">
-<div class="footer-widget mb-80">
-<h5 class="widget-title">RECENT NEWS</h5>
-
-<div class="single-recent-blog d-flex align-items-center">
-<div class="post-thumbnail">
-<img src="{% static 'img/bg-img/4.jpg" alt="">
-</div>
-<div class="post-content">
-<a href="{% static '#" class="post-title">WA’s largest farming business on the market</a>
-<div class="post-date">18 Aug 2018</div>
-</div>
-</div>
-
-<div class="single-recent-blog d-flex align-items-center">
-<div class="post-thumbnail">
-<img src="{% static 'img/bg-img/5.jpg" alt="">
-</div>
-<div class="post-content">
-<a href="{% static '#" class="post-title">Beef retail prices hit a record</a>
-<div class="post-date">18 Aug 2018</div>
-</div>
-</div>
-</div>
-</div>
--->
 <div class="col-12 col-sm-6 col-lg-3">
 <div class="footer-widget mb-80">
 <h5 class="widget-title">STAY CONNECTED</h5>
